@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"> </script>
+    <title>Pomodoro timer</title>
+</head>
+<body onload="list_update()">
+
+    <audio src="audio/sound.mp3"></audio>
+
+    <header>
+        <div class="container">
+            <h1>Pomodoro Timer</h1>
+            <h3 class="time-now"></h3>
+        </div>
+        
+    </header>
+    <main>
+        <div class="container">
+            <div class="timer">
+                <div id="timer-options">
+                    <nav>
+                        <ul>
+                            <li onclick="time_start_change(50)">50min</li>
+                            <li onclick="time_start_change(25)">25min</li>
+                            <li onclick="time_start_change(15)">15min</li>
+                            <li onclick="time_start_change(5)">5min</li>
+                        </ul>
+                    </nav>
+                </div>
+                <h2 id="timer">25:00</h2>
+        
+                <button id="start-button" onclick="start()">Iniciar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Desenvolvido por: <a href="#"><big>Isabelle Lacerda</big></a></p>
+        </div>
+        
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
